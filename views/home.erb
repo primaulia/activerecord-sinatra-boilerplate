@@ -1,0 +1,14 @@
+<h1>Resto of Wizardry</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <h3>
+        <a href="/restaurants/<%= restaurant.id %>">
+          <%= restaurant.name %> 
+        </a>
+      </h3>      
+      (<%= restaurant.address %>)
+    </li>    
+  <% end %>  
+</ul>
